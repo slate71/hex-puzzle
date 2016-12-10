@@ -97,3 +97,75 @@
   color: #888;
 }
 
+/*==================================
+ANIMATIONS
+===================================*/
+
+/***** Shake Animations ******/
+.animate,
+.animate_horizontal,
+.animate_vertical,
+.animate_rotate,
+.animate_crazy {
+  transform-origin: center center;
+  animation-play-state: running;
+}
+
+@keyframes animate {
+  20% { transform: translate(-0.5px, -0.5px) rotate(-0.5deg); }
+  40% { transform: translate(2.5px, 0.5px) rotate(0.5deg); }
+  60% { transform: translate(-1.5px, 0.5px) rotate(0.5deg); }
+  80% { transform: translate(-1.5px, 1.5px) rotate(-0.5deg); }
+  0%, 100% { transform: translate(0, 0) rotate(0); } }
+
+.animate {
+  animation: animate 100ms ease-in-out 0s infinite;
+}
+
+@keyframes animate_horizontal {
+  20% { transform: translate(20px, 0) rotate(0); }
+  40% { transform: translate(0px, 0) rotate(0); }
+  60% { transform: translate(4px, 0) rotate(0); }
+  80% { transform: translate(-16px, 0) rotate(0); }
+  0%, 100% { transform: translate(0, 0) rotate(0); }
+}
+
+.animate_horizontal {
+  animation: animate_horizontal 250ms ease-out 0s infinite;
+}
+
+@keyframes animate_vertical {
+  20% { transform: translate(0, -18px) rotate(0); }
+  40% { transform: translate(0, -8px) rotate(0); }
+  60% { transform: translate(0, 0px) rotate(0); }
+  80% { transform: translate(0, 8px) rotate(0); }
+  0%, 100% { transform: translate(0, 0) rotate(0); } 
+}
+
+.animate_vertical {
+  animation: animate_vertical 150ms ease-in 0s infinite;
+}
+
+@keyframes animate_rotate {
+  20% { transform: translate(0, 0) rotate(15deg); }
+  40% { transform: translate(0, 0) rotate(-9deg); }
+  60% { transform: translate(0, 0) rotate(7deg); }
+  80% { transform: translate(0, 0) rotate(3deg); }
+  0%, 100% { transform: translate(0, 0) rotate(0); }
+}
+
+.animate_rotate {
+  animation: animate_rotate 200ms ease 0s infinite;
+}
+
+@keyframes animate_crazy {
+  20% { transform: translate(17px, -8px) rotate(8deg); }
+  40% { transform: translate(16px, 14px) rotate(1deg); }
+  60% { transform: translate(13px, -10px) rotate(-4deg); }
+  80% { transform: translate(11px, -18px) rotate(8deg); }
+  0%, 100% { transform: translate(0, 0) rotate(0); }
+}
+
+.animate_crazy {
+  animation: animate_crazy 100ms ease 0s infinite;
+}
