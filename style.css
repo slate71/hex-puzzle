@@ -99,37 +99,38 @@ body {
 .drop-target {
     width: 50px;
     height: 50px;
-    background-color: blue;
+    color: yellow;
+    border: 1px solid blue;
 }
 
 .drop-target05 {
     position: absolute;
-    top: 145px;
-    left: 175px;
+    top: 45px;
+    left: 15px;
 }
 
 .drop-target06 {
     position: absolute;
-    top: 145px;
-    left: 360px;
+    top: 45px;
+    left: 200px;
 }
 
 .drop-target07 {
     position: absolute;
-    top: 145px;
-    left: 530px;
+    top: 45px;
+    left: 370px;
 }
 
 .drop-target08 {
     position: absolute;
-    top: 145px;
-    left: 682px;
+    top: 45px;
+    left: 500px;
 }
 
 .drop-target09 {
     position: absolute;
-    top: 145px;
-    left: 848px;
+    top: 45px;
+    left: 670px;
 }
 
 
@@ -139,27 +140,27 @@ body {
 
 .drop-target10 {
     position: absolute;
-    top: 145px;
-    left: 496px;
+    top: 115px;
+    left: 124px;
 }
 
 
 .drop-target11 {
     position: absolute;
-    top: 145px;
-    left: 496px;
+    top: 115px;
+    left: 276px;
 }
 
 .drop-target12 {
     position: absolute;
-    top: 145px;
-    left: 496px;
+    top: 115px;
+    left: 440px;
 }
 
 .drop-target13 {
     position: absolute;
-    top: 145px;
-    left: 496px;
+    top: 115px;
+    left: 595px;
 }
 
 
@@ -167,33 +168,33 @@ body {
 
 .drop-target14 {
     position: absolute;
-    top: 145px;
-    left: 175px;
+    top: 165px;
+    left: 15px;
 }
 
 .drop-target15 {
     position: absolute;
-    top: 145px;
-    left: 360px;
+    top: 165px;
+    left: 200px;
 }
 
 
 .drop-target16 {
     position: absolute;
-    top: 145px;
-    left: 530px;
+    top: 165px;
+    left: 370px;
 }
 
 .drop-target17 {
     position: absolute;
-    top: 145px;
-    left: 682px;
+    top: 165px;
+    left: 500px;
 }
 
 .drop-target18 {
     position: absolute;
-    top: 145px;
-    left: 848px;
+    top: 165px;
+    left: 670px;
 }
 
 
@@ -201,27 +202,27 @@ body {
 
 .drop-target19 {
     position: absolute;
-    top: 145px;
-    left: 496px;
+    top: 200px;
+    left: 124px;
 }
 
 .drop-target20 {
     position: absolute;
-    top: 145px;
-    left: 496px;
+    top: 200px;
+    left: 276px;
 }
 
 
 .drop-target21 {
     position: absolute;
-    top: 145px;
-    left: 496px;
+    top: 200px;
+    left: 440px;
 }
 
 .drop-target22 {
     position: absolute;
-    top: 145px;
-    left: 496px;
+    top: 200px;
+    left: 595px;
 }
 
 
@@ -229,33 +230,33 @@ body {
 
 .drop-target23 {
     position: absolute;
-    top: 145px;
-    left: 175px;
+    top: 245px;
+    left: 15px;
 }
 
 .drop-target24 {
     position: absolute;
-    top: 145px;
-    left: 360px;
+    top: 245px;
+    left: 200px;
 }
 
 .drop-target25 {
     position: absolute;
-    top: 145px;
-    left: 530px;
+    top: 245px;
+    left: 370px;
 }
 
 
 .drop-target26 {
     position: absolute;
-    top: 145px;
-    left: 682px;
+    top: 245px;
+    left: 500px;
 }
 
 .drop-target27 {
     position: absolute;
-    top: 145px;
-    left: 848px;
+    top: 245px;
+    left: 670px;
 }
 
 
@@ -263,59 +264,59 @@ body {
 
 .drop-target28 {
     position: absolute;
-    top: 145px;
-    left: 496px;
+    top: 283px;
+    left: 105px;
 }
 
 .drop-target29 {
     position: absolute;
-    top: 145px;
-    left: 496px;
+    top: 281px;
+    left: 252px;
 }
 
 .drop-target30 {
     position: absolute;
-    top: 145px;
-    left: 496px;
+    top: 279px;
+    left: 418px;
 }
 
 .drop-target31 {
     position: absolute;
-    top: 145px;
-    left: 496px;
+    top: 271px;
+    left: 583px;
 }
 
 
 
 .drop-target32 {
     position: absolute;
-    top: 145px;
-    left: 175px;
+    top: 334px;
+    left: 29px;
 }
 
 .drop-target33 {
     position: absolute;
-    top: 145px;
-    left: 360px;
+    top: 320px;
+    left: 174px;
 }
 
 .drop-target34 {
     position: absolute;
-    top: 145px;
-    left: 530px;
+    top: 315px;
+    left: 362px;
 }
 
 .drop-target35 {
     position: absolute;
-    top: 145px;
-    left: 682px;
+    top: 332px;
+    left: 512px;
 }
 
 
 .drop-target36 {
     position: absolute;
-    top: 145px;
-    left: 848px;
+    top: 316px;
+    left: 706px;
 }
 
 
@@ -324,26 +325,26 @@ body {
 
 .drop-target37 {
     position: absolute;
-    top: 475px;
-    left: 196px;
+    top: 383px;
+    left: 124px;
 }
 
 .drop-target38 {
     position: absolute;
-    top: 475px;
-    left: 396px;
+    top: 377px;
+    left: 254px;
 }
 
 .drop-target39 {
     position: absolute;
-    top: 475px;
-    left: 496px;
+    top: 379px;
+    left: 427px;
 }
 
 .drop-target40 {
     position: absolute;
-    top: 480px;
-    left: 774px;
+    top: 361px;
+    left: 582px;
 }
 
 
@@ -351,32 +352,32 @@ body {
 
 .drop-target41 {
     position: absolute;
-    top: 517px;
-    left: 175px;
+    top: 418px;
+    left: 40px;
 }
 
 .drop-target42 {
    position: absolute;
-    top: 515px;
-    left: 360px;
+    top: 422px;
+    left: 178px;
 }
 
 .drop-target43 {
    position: absolute;
-    top: 522px;
-    left: 530px;
+    top: 425px;
+    left: 370px;
 }
 
 .drop-target44 {
     position: absolute;
-    top: 513px;
-    left: 682px;
+    top: 416px;
+    left: 500px;
 }
 
 .drop-target45 {
     position: absolute;
-    top: 519px;
-    left: 848px;
+    top: 430px;
+    left: 670px;
 }
 
 
