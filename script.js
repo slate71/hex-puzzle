@@ -4,25 +4,25 @@
 // Drap and Drop
 
 
-function dragstart_handler(event) {
+function dragstartHandler(event) {
   console.log(event);
   event.dataTransfer.setData("text/plain", event.target.id);
 }
 
-function drop_handler(event) {
+function dropHandler(event) {
   event.preventDefault();
   var data = event.dataTransfer.getData("text/plain");
   event.target.appendChild(document.getElementById(data));
 }
 
-function dragover_handler(event) {
+function dragoverHandler(event) {
   event.preventDefault();
   event.dataTransfer.dropEffect = "move";
 }
 
 // Scramble
 
-function click_handler(event) {
+function clickHandler(event) {
   var bg = document.querySelector('#droppableZone');
   var pieces = [].slice.call(document.querySelectorAll('.piece'));
 
