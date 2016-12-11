@@ -9,7 +9,33 @@ var pieces = [].slice.call(document.querySelectorAll('.piece'));
 var puzzle = document.getElementById('solved-hint');
 var timer = null;
 
-// Drap and Drop
+// Drag and Drop
+
+function drag(event) {
+}
+
+function dragStart(event) {
+  console.log(event)
+  event.dataTransfer.setData("text", event.target.id)
+}
+
+function dragEnd(event) {
+  event.target.style.position = 'static';
+}
+function dragEnter(event) {}
+function dragExit(event) {}
+function dragLeave(event) {}
+
+function dragOver(event) {
+  event.preventDefault();
+  event.dataTransfer.dropEffect = "move";
+}
+
+function drop(event) {
+  event.preventDefault();
+  var data = event.dataTransfer.getData("text");
+  event.target.appendChild(document.getElementById(data));
+}
 
 function dragstartHandler(event) {
   console.log(event);
@@ -182,23 +208,6 @@ function resetGame() {
     setTimeout(shakeElements, 3000, elementsToShake);
   }
   // Activate congratulations to user by calling the function.
-  puzzleSolved();
+  // puzzleSolved();
 
 })()
-
-
-/*
-function dragStart(event) {
-  event.dataTransfer.setData('Text', event.target.id);
-}
-
-function allowDrop(event) {
-  event.preventDefault();
-}
-
-function drop(event) {
-  event.preventDefault();
-  var data = event.dataTransfer.getData('Text');
-  event.target.appendChild(document.getElementById(data));
-}
-*/
