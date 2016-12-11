@@ -485,6 +485,10 @@ body {
   width: 110px;
 }
 
+.show-piece {
+  display: block;
+}
+
 .piece05 {
   background-image: url('images/Group 5.png');
 }
