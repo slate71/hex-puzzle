@@ -476,12 +476,9 @@ body {
   width: 868px;
 }
 
+.piece-container,
 .piece {
-  display: none;
   height: 95px;
-  left: 87%;
-  position: absolute;
-  right: 0;
   width: 110px;
 }
 
