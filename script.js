@@ -59,19 +59,21 @@ hardButton.addEventListener('click', function() {
   settings.setDifficulty("hard");
 }, false);
 
-
-
-
 // Drag and Drop
 
 function drag(event) {
 }
 
 function dragStart(event) {
-  console.log(event)
+  var element = event.target.id;
+  var node = document.getElementById(element);
+  var clone = node.cloneNode(true);
+  clone.style.position = "absolute";
+  clone.style.top = "0px";
+  clone.style.left = "-100px";
+  document.body.appendChild(clone);
+  event.dataTransfer.setDragImage(clone, 0, 0);
   event.dataTransfer.setData("text", event.target.id);
-
-
 }
 
 function dragEnd(event) {
@@ -97,13 +99,9 @@ function dragstartHandler(event) {
 }
 
 function dropHandler(event) {
-
-
   event.preventDefault();
   var data = event.dataTransfer.getData("text/plain");
    window.alert(event.clientX + ',' + event.clientY);
-
-
 }
 
 function dragoverHandler(event) {
@@ -121,7 +119,7 @@ function clickHandler(event) {
   bg.setAttribute('class', 'drop-zone unsolved')
 
   pieces.forEach(piece => {
-    piece.style.display = 'block';
+    piece.style.display = 'inline-block';
     piece.style.position = 'absolute';
     piece.style.top = Math.floor(Math.random() * (48+1)) + '%';
     piece.style.left = Math.floor(Math.random() * (87+1)) + '%';
@@ -233,7 +231,6 @@ function resetGame() {
     difficultyButtons.forEach(function(element, index) {
     return element.classList.remove('hide-element');
   });
-
 
   gameStarted = false;
   count = 0;
