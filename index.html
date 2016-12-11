@@ -7,9 +7,9 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
- 
+
   <h1 class="puzzle-title">Hexgon Jigsaw Puzzle</h1>
-  <section id="droppableZone" class="drop-zone" >
+  <section id="droppableZone" class="drop-zone solved" >
    <!-- Puzzle Pieces -->
     <div id="p05" class="piece piece05" draggable="true" ondrag="drag_handler(event);" ondragstart="dragstart_handler(event);"></div>
     <div id="p06" class="piece piece06" draggable="true" ondrag="drag_handler(event);" ondragstart="dragstart_handler(event);"></div>
@@ -51,16 +51,26 @@
     <div id="p43" class="piece piece43" draggable="true" ondrag="drag_handler(event);" ondragstart="dragstart_handler(event);"></div>
     <div id="p44" class="piece piece44" draggable="true" ondrag="drag_handler(event);" ondragstart="dragstart_handler(event);"></div>
     <div id="p45" class="piece piece45" draggable="true" ondrag="drag_handler(event);" ondragstart="dragstart_handler(event);"></div>
-     <!-- End Puzzle Pieces --> 
+     <!-- End Puzzle Pieces -->
 
   </section>
-    
-  
-  <div class="scramble-button button" onclick="click_handler(event);">Scramble</div>
+  <!--  Hint Section-->
+
+  <div id="solved-hint"></div>
+
+  <!--  Control Buttons and Timer-->
+  <div class="control-container">
+    <button class="hide-element" id="hint" onmousedown="showHint(event)"
+    onmouseup="hideHint(event)">Hint</button>
+    <button class="hide-element" id="reset" onclick="">Reset</button>
+    <div class="scramble-button button" id="scramble" onclick="click_handler(event);">Scramble</div>
+    <div class="hide-element" id="clock"></div>
+  </div>
+
   <section id="pieces-tray" class="pieces-tray"></section>
 
       <!-- Hex Drop Zone -->
-      <section class="drop-target-group">
+  <section class="drop-target-group">
      <div class="drop-target drop-target05" id="h05" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">05</div>
      <div class="drop-target drop-target06" id="h06" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">06</div>
      <div class="drop-target drop-target07" id="h07" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">07</div>
@@ -105,7 +115,7 @@
      </section>
      <!-- End Hex Drop Zone -->
 
-
+     <audio id="audiotag1" src="audio/game-over.mp3"></audio>
 
  <!--  <div class="wrapper">
   <div class="puzzle">
