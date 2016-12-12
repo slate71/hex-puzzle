@@ -402,11 +402,11 @@ body {
 }
 
 .solved {
-  background-image: url('//slate71.github.io/hex-puzzle/images/_Puzzle_solved.png');
+  background-image: url('//slate71.github.io/hex-puzzle/images/Puzzle_solved.png');
 }
 
 .unsolved {
-  background-image: url('//slate71.github.io/hex-puzzle/images/_Puzzle_bg_unsolved.png');
+  background-image: url('//slate71.github.io/hex-puzzle/images/Puzzle_bg_unsolved.png');
 }
 
 .solved-puzzle {
